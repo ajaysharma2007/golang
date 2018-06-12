@@ -23,7 +23,7 @@ func (merge *MergeSort) merge(first []int, last []int, arr []int) {
 	arrIndex := 0
 
 	for firstIndex < len(first) && lastIndex < len(last) {
-		if first[firstIndex] < last[lastIndex] {
+		if first[firstIndex] <= last[lastIndex] {
 			arr[arrIndex] = first[firstIndex]
 			firstIndex++
 		} else {
